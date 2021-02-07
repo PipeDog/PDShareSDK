@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'PDShareSDK_Example' do
+  pod 'PDShareSDK', :path => '../'
+
+  target 'PDShareSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
