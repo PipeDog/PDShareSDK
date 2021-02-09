@@ -8,6 +8,7 @@
 #import "PDSharePanelView.h"
 #import "PDShareChannelView.h"
 #import "PDShareManager.h"
+#import "PDShareUIUtils.h"
 
 @interface PDShareBackgroundView : UIView
 
@@ -177,7 +178,7 @@
     self.onSelected = onSelected;
     
     [self.channelView reloadData];
-    [self.animator showWithAnimated:YES inView:inView];
+    [self.animator showWithAnimated:YES inView:inView ?: PDShareGetKeyWindow()];
 }
 
 - (void)dismissWithAnimated:(BOOL)animated {
