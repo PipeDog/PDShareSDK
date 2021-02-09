@@ -30,7 +30,16 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'PDShareSDK/Classes/**/*'
+  s.source_files = [
+  'PDShareSDK/Classes/**/*',
+  'PDShareSDK/Classes/**/**/*',
+  ]
+  
+  s.resource_bundles = {
+    'PDShareSDK' => ['PDShareSDK/Assets/*.xcassets']
+  }
+  
+  #s.source_files = 'PDShareSDK/Classes/**/*'
   
   # s.resource_bundles = {
   #   'PDShareSDK' => ['PDShareSDK/Assets/*.png']

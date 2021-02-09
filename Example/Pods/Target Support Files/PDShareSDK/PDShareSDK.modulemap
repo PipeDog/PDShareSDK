@@ -1,0 +1,6 @@
+framework module PDShareSDK {
+  umbrella header "PDShareSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
