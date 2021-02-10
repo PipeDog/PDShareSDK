@@ -33,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<PDShareChannelViewDataSource> dataSource;
 
 - (void)reloadData;
+- (CGFloat)heightWithChannels:(NSArray<PDShareChannelKey> *)channels;
 
 @end
 

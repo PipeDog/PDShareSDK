@@ -64,6 +64,17 @@
     [self.collectionView reloadData];
 }
 
+- (CGFloat)heightWithChannels:(NSArray<PDShareChannelKey> *)channels {
+    NSInteger line = ceil(channels.count / 3.f);
+    line = line ?: 0;
+    
+    CGFloat height = 70.f; // top
+    height += line * 81.f; // cell height 81.f
+    height += (line - 1) * 30.f; // line space 30.f
+    height += 46.f; // bottom
+    return height;
+}
+
 #pragma mark - UICollectionViewDelegate, UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (self.dataSource && [self.dataSource respondsToSelector:@selector(channelsForChannelView:)]) {

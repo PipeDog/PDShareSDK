@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "PDShareSDKCallback.h"
 #import "PDShareSDKDefinition.h"
-#import "PDShareData.h"
+#import "PDShareDataModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,7 +27,7 @@ static const PDShareModuleExportInfo __pd_share_module_exp_##classname##__ = {ch
 
 - (BOOL)shouldCallbackWhenApplicationBecomeActive;
 - (void)registerWithDataSource:(NSDictionary<NSString *, NSString *> *)registerMap;
-- (void)shareData:(id<PDShareData>)shareData onFinished:(void (^)(BOOL success, NSError *error))onFinished;
+- (void)shareData:(PDShareDataModel *)shareData onFinished:(void (^)(BOOL success, NSError *error))onFinished;
 
 @end
 

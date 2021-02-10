@@ -216,18 +216,7 @@
 
 #pragma mark - PDSharePanelAnimatorDelegate
 - (CGFloat)contentViewHeightForAnimator:(PDSharePanelAnimator *)animator {
-    NSInteger line = ceil(self.channels.count / 3.f);
-    line = line ?: 0;
-    
-    CGFloat contentViewHeight = 70.f + 46.f;
-    contentViewHeight += line * 81.f; // cell height 81.f
-    contentViewHeight += (line - 1) * 30.f; // line space 30.f
-    return contentViewHeight;
-}
-
-#pragma mark - Gesture Methods
-- (void)tap:(UIGestureRecognizer *)sender {
-    [self dismissWithAnimated:YES];
+    return [self.channelView heightWithChannels:self.channels];
 }
 
 #pragma mark - Getter Methods
