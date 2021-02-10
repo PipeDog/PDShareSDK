@@ -7,12 +7,16 @@
 //
 
 #import "PDAppDelegate.h"
+#import <PDShareSDKEngine.h>
 
 @implementation PDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[PDShareSDKEngine sharedInstance] startEngine];
+    
     return YES;
 }
 

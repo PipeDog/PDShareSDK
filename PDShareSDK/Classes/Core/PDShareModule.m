@@ -17,7 +17,7 @@
     // Override this method if needed.
 }
 
-- (void)shareData:(PDShareDataModel *)shareData onFinished:(void (^)(BOOL, NSError * _Nonnull))onFinished {
+- (void)shareData:(PDShareDataModel *)shareData onFinished:(void (^)(BOOL, NSError * _Nullable))onFinished {
     NSAssert(NO, @"Override this method!");
 }
 

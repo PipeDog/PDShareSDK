@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		822BBB43B0E0D127F8588E30 /* libPods-PDShareSDK_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF6451453B31D992FEC8F6D /* libPods-PDShareSDK_Tests.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DD5A997925D37A2E005B53E0 /* PDWeChatSessionShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A997825D37A2E005B53E0 /* PDWeChatSessionShareModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47F7D16E1005C6A919EE9023 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		47F7D16E1005C6A919EE9023 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4CF6451453B31D992FEC8F6D /* libPods-PDShareSDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDShareSDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DF9C509176F1FB2A2B58163 /* PDShareSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PDShareSDK.podspec; path = ../PDShareSDK.podspec; sourceTree = "<group>"; };
+		4DF9C509176F1FB2A2B58163 /* PDShareSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PDShareSDK.podspec; path = ../PDShareSDK.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PDShareSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDShareSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,13 +61,15 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6314350BCA9B8D2F6EB33A51 /* Pods-PDShareSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDShareSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-PDShareSDK_Tests/Pods-PDShareSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		637B8A2EEE919D671D778D8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		637B8A2EEE919D671D778D8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BA90541438F6AD3B5868758 /* libPods-PDShareSDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDShareSDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9076041C74000C618DDCB448 /* Pods-PDShareSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDShareSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-PDShareSDK_Example/Pods-PDShareSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AB2524812F9A30318FF72832 /* Pods-PDShareSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDShareSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-PDShareSDK_Example/Pods-PDShareSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B8C0E19DB06D09D02FAE27F9 /* Pods-PDShareSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDShareSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PDShareSDK_Tests/Pods-PDShareSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5A997725D37A2E005B53E0 /* PDWeChatSessionShareModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDWeChatSessionShareModule.h; sourceTree = "<group>"; };
+		DD5A997825D37A2E005B53E0 /* PDWeChatSessionShareModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDWeChatSessionShareModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				DD5A997725D37A2E005B53E0 /* PDWeChatSessionShareModule.h */,
+				DD5A997825D37A2E005B53E0 /* PDWeChatSessionShareModule.m */,
 			);
 			name = "Example for PDShareSDK";
 			path = PDShareSDK;
@@ -193,7 +198,6 @@
 				B8C0E19DB06D09D02FAE27F9 /* Pods-PDShareSDK_Tests.debug.xcconfig */,
 				6314350BCA9B8D2F6EB33A51 /* Pods-PDShareSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* PDAppDelegate.m in Sources */,
+				DD5A997925D37A2E005B53E0 /* PDWeChatSessionShareModule.m in Sources */,
 				6003F5A7195388D20070C39A /* PDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -24,19 +24,19 @@
 
 - (IBAction)didClickButton:(id)sender {
     NSArray<PDShareChannelKey> *channels = @[
-        @(PDShareSDKChannelCopyLink),
         @(PDShareSDKChannelWeChatSession),
-        @(PDShareSDKChannelWeChatTimeline),
-        @(PDShareSDKChannelQQ),
+        @(PDShareSDKChannelWeChatSession),
+        @(PDShareSDKChannelWeChatSession),
+        @(PDShareSDKChannelWeChatSession),
     ];
     [self.sharePanelView showWithChannels:channels
                                    inView:self.view
                                 shareData:^(id<PDShareData>  _Nonnull shareData) {
-        
+        shareData.title = @"分享标题";
     } onSuccess:^(PDShareSDKChannel channel) {
-        
+        NSLog(@"share success");
     } onFailure:^(PDShareSDKChannel channel, NSError * _Nonnull error) {
-        
+        NSLog(@"share failed, error = %@", error);
     }];
 }
 
