@@ -89,7 +89,9 @@ static PDShareManager *__defaultManager;
              shareData:(void (^)(id<PDShareData> _Nonnull))shareData
              onSuccess:(void (^)(PDShareSDKChannel))onSuccess
              onFailure:(void (^)(PDShareSDKChannel, NSError * _Nonnull))onFailure {
-    self.currentChannel = channel;
+    PDShareChannelEvent *event = [[PDShareChannelEvent alloc] initWithSuccess:onSuccess onFailure:onFailure];
+    self.events[@(channel)] = event; self.currentChannel = channel;
+
     PDShareModule *shareModule = [[PDShareModuleManager defaultManager] shareModuleForChannel:channel];
     if (!shareModule) {
         NSError *error = PDShareError(PDShareSDKErrorCodeInvalidChannel, @"Unsupport share channel!");
@@ -105,10 +107,7 @@ static PDShareManager *__defaultManager;
         [self didFinishShare:NO withError:error];
         return;
     }
-    
-    PDShareChannelEvent *event = [[PDShareChannelEvent alloc] initWithSuccess:onSuccess onFailure:onFailure];
-    self.events[@(channel)] = event;
-    
+        
     [shareModule shareData:shareDataModel onFinished:^(BOOL success, NSError * _Nonnull error) {
         [self didFinishShare:success withError:error];
     }];

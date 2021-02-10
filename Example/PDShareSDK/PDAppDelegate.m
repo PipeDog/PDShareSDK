@@ -8,6 +8,7 @@
 
 #import "PDAppDelegate.h"
 #import <PDShareSDKEngine.h>
+#import <PDShareSDKUIConfiguration.h>
 
 @implementation PDAppDelegate
 
@@ -15,7 +16,29 @@
 {
     // Override point for customization after application launch.
     
+    // Launch shareSDK
     [[PDShareSDKEngine sharedInstance] startEngine];
+    
+    // Register share channel
+    [[PDShareSDKEngine sharedInstance] registerChannel:PDShareSDKChannelWeChatSession withBlock:^NSDictionary<NSString *,NSString *> * _Nonnull{
+        return @{
+            @"appKey": @"wechatAppKey",
+            @"appSecret": @"wechatAppSecret"
+        };
+    }];
+    
+    // Set image and title
+    PDShareSDKUIConfiguration *configuration = [PDShareSDKUIConfiguration defaultUIConfiguration];
+
+    [configuration setStyleForChannel:PDShareSDKChannelWeChatSession withBlock:^(id<PDShareChannelStyle>  _Nonnull style) {
+        style.image = [UIImage imageNamed:@"share_icon_weixin"];
+        style.title = @"微信";
+    }];
+    
+    [configuration setStyleForChannel:PDShareSDKChannelWeChatTimeline withBlock:^(id<PDShareChannelStyle>  _Nonnull style) {
+        style.image = [UIImage imageNamed:@"share_icon_timeline"];
+        style.title = @"朋友圈";
+    }];
     
     return YES;
 }

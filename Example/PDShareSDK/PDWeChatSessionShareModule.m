@@ -14,8 +14,13 @@
     return YES;
 }
 
-- (void)registerWithDataSource:(NSDictionary<NSString *,NSString *> *)registerMap {
-    // TODO: register wechat app id...
+- (BOOL)registerWithDataSource:(NSDictionary<NSString *,NSString *> *)registerMap {
+    NSString *appKey = registerMap[@"appKey"];
+    NSString *appSecret = registerMap[@"appSecret"];
+    
+    // TODO: register wechat channel
+    NSLog(@"register weichat channel, appKey = %@, appSecret = %@", appKey, appSecret);
+    return YES;
 }
 
 - (void)shareData:(PDShareDataModel *)shareData onFinished:(void (^)(BOOL, NSError * _Nullable))onFinished {

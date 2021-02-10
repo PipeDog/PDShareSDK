@@ -61,9 +61,7 @@
     
     id<PDShareChannelStyle> style = PDShareSDKGetStyle(channel);
     self.imageView.image = style.image;
-    self.textLabel.text = style.title;
-    
-    self.imageView.backgroundColor = self.textLabel.backgroundColor = [UIColor lightGrayColor];
+    self.textLabel.text = style.title;    
 }
 
 #pragma mark - Getter Methods
@@ -80,6 +78,7 @@
     if (!_textLabel) {
         _textLabel = [[UILabel alloc] init];
         _textLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        _textLabel.textAlignment = NSTextAlignmentCenter;
         _textLabel.font = [UIFont systemFontOfSize:15.f];
         _textLabel.textColor = [UIColor colorWithRed:(102 % 255) / 255.f
                                                green:(102 % 255) / 255.f

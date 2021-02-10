@@ -25,9 +25,7 @@
 - (IBAction)didClickButton:(id)sender {
     NSArray<PDShareChannelKey> *channels = @[
         @(PDShareSDKChannelWeChatSession),
-        @(PDShareSDKChannelWeChatSession),
-        @(PDShareSDKChannelWeChatSession),
-        @(PDShareSDKChannelWeChatSession),
+        @(PDShareSDKChannelWeChatTimeline),
     ];
     [self.sharePanelView showWithChannels:channels
                                    inView:self.view
