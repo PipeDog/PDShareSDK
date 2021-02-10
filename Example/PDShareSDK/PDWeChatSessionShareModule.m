@@ -30,4 +30,16 @@
     !onFinished ?: onFinished(NO, error);
 }
 
+- (BOOL)handleURL:(NSURL *)URL {
+    return YES;
+}
+
+- (BOOL)handleUniversalLink:(NSUserActivity *)userActivity {
+    return YES;
+}
+
+- (BOOL)handleURL:(NSURL *)URL sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return YES;
+}
+
 @end

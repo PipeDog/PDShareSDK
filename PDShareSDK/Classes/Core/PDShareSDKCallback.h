@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (BOOL)handleURL:(NSURL *)URL;
 - (BOOL)handleUniversalLink:(NSUserActivity *)userActivity;
-- (BOOL)handleURL:(NSURL *)URL sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id)annotation;
+- (BOOL)handleURL:(NSURL *)URL sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nullable)annotation;
 
 @end
 
