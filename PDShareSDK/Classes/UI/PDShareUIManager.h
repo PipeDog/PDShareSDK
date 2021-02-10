@@ -1,5 +1,5 @@
 //
-//  PDShareSDKUIConfiguration.h
+//  PDShareUIManager.h
 //  PDShareSDK
 //
 //  Created by liang on 2021/2/9.
@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface PDShareSDKUIConfiguration : NSObject
+@interface PDShareUIManager : NSObject
 
-@property (class, strong, readonly) PDShareSDKUIConfiguration *defaultUIConfiguration;
+@property (class, strong, readonly) PDShareUIManager *defaultManager;
 
 - (void)setStyleForChannel:(PDShareSDKChannel)channel withBlock:(void (^)(id<PDShareChannelStyle> style))block;
 

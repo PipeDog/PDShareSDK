@@ -6,7 +6,7 @@
 //
 
 #import "PDShareChannelCell.h"
-#import "PDShareSDKUIConfiguration.h"
+#import "PDShareUIManager.h"
 
 @interface PDShareChannelCell ()
 

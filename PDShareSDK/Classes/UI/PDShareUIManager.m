@@ -1,11 +1,11 @@
 //
-//  PDShareSDKUIConfiguration.m
+//  PDShareUIManager.m
 //  PDShareSDK
 //
 //  Created by liang on 2021/2/9.
 //
 
-#import "PDShareSDKUIConfiguration.h"
+#import "PDShareUIManager.h"
 
 @interface PDShareChannelStyle : NSObject <PDShareChannelStyle>
 
@@ -25,33 +25,33 @@
 
 @end
 
-@interface PDShareSDKUIConfiguration ()
+@interface PDShareUIManager ()
 
 @property (nonatomic, strong) NSMutableDictionary<PDShareChannelKey, id<PDShareChannelStyle>> *styleMap;
 
 @end
 
-@implementation PDShareSDKUIConfiguration
+@implementation PDShareUIManager
 
-static PDShareSDKUIConfiguration *__defaultUIConfiguration;
+static PDShareUIManager *__defaultManager;
 
-+ (PDShareSDKUIConfiguration *)defaultUIConfiguration {
++ (PDShareUIManager *)defaultManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        if (__defaultUIConfiguration == nil) {
-            __defaultUIConfiguration = [[self alloc] init];
+        if (__defaultManager == nil) {
+            __defaultManager = [[self alloc] init];
         }
     });
-    return __defaultUIConfiguration;
+    return __defaultManager;
 }
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
     @synchronized (self) {
-        if (__defaultUIConfiguration == nil) {
-            __defaultUIConfiguration = [super allocWithZone:zone];
+        if (__defaultManager == nil) {
+            __defaultManager = [super allocWithZone:zone];
         }
     }
-    return __defaultUIConfiguration;
+    return __defaultManager;
 }
 
 - (instancetype)init {
@@ -76,7 +76,7 @@ static PDShareSDKUIConfiguration *__defaultUIConfiguration;
 @end
 
 id<PDShareChannelStyle> PDShareSDKGetStyle(PDShareSDKChannel channel) {
-    PDShareSDKUIConfiguration *configuration = [PDShareSDKUIConfiguration defaultUIConfiguration];
-    id<PDShareChannelStyle> style = configuration.styleMap[@(channel)];
+    PDShareUIManager *defaultManager = [PDShareUIManager defaultManager];
+    id<PDShareChannelStyle> style = defaultManager.styleMap[@(channel)];
     return style;
 }

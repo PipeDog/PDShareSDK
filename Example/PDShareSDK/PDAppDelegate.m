@@ -8,7 +8,7 @@
 
 #import "PDAppDelegate.h"
 #import <PDShareSDKEngine.h>
-#import <PDShareSDKUIConfiguration.h>
+#import <PDShareUIManager.h>
 
 @implementation PDAppDelegate
 
@@ -28,14 +28,14 @@
     }];
     
     // Set image and title
-    PDShareSDKUIConfiguration *configuration = [PDShareSDKUIConfiguration defaultUIConfiguration];
+    PDShareUIManager *defaultManager = [PDShareUIManager defaultManager];
 
-    [configuration setStyleForChannel:PDShareSDKChannelWeChatSession withBlock:^(id<PDShareChannelStyle>  _Nonnull style) {
+    [defaultManager setStyleForChannel:PDShareSDKChannelWeChatSession withBlock:^(id<PDShareChannelStyle>  _Nonnull style) {
         style.image = [UIImage imageNamed:@"share_icon_weixin"];
         style.title = @"微信";
     }];
     
-    [configuration setStyleForChannel:PDShareSDKChannelWeChatTimeline withBlock:^(id<PDShareChannelStyle>  _Nonnull style) {
+    [defaultManager setStyleForChannel:PDShareSDKChannelWeChatTimeline withBlock:^(id<PDShareChannelStyle>  _Nonnull style) {
         style.image = [UIImage imageNamed:@"share_icon_timeline"];
         style.title = @"朋友圈";
     }];
