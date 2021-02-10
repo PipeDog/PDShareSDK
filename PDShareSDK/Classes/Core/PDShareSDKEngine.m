@@ -37,11 +37,11 @@ static PDShareSDKEngine *__sharedInstance = nil;
     [[PDShareModuleManager defaultManager] loadShareModules];
 }
 
-- (void)registerChannel:(PDShareSDKChannel)channel
+- (BOOL)registerChannel:(PDShareSDKChannel)channel
               withBlock:(NSDictionary<NSString *,NSString *> * _Nonnull (^)(void))block {
     PDShareModule *shareModule = [[PDShareModuleManager defaultManager] shareModuleForChannel:channel];
     NSDictionary *info = block ? block() : nil;
-    [shareModule registerWithDataSource:info];
+    return [shareModule registerWithDataSource:info];
 }
 
 #pragma mark - PDShareSDKCallback

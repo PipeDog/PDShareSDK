@@ -13,8 +13,9 @@
     return YES;
 }
 
-- (void)registerWithDataSource:(NSDictionary<NSString *,NSString *> *)registerMap {
+- (BOOL)registerWithDataSource:(NSDictionary<NSString *,NSString *> *)registerMap {
     // Override this method if needed.
+    return YES;
 }
 
 - (void)shareData:(PDShareDataModel *)shareData onFinished:(void (^)(BOOL, NSError * _Nullable))onFinished {

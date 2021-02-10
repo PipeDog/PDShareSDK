@@ -27,7 +27,7 @@ static const PDShareModuleExpInfo __pd_share_module_exp_##classname##__ = {chann
 @interface PDShareModule : NSObject <PDShareSDKCallback>
 
 - (BOOL)shouldCallbackWhenApplicationBecomeActive;
-- (void)registerWithDataSource:(NSDictionary<NSString *, NSString *> *)registerMap;
+- (BOOL)registerWithDataSource:(NSDictionary<NSString *, NSString *> *)registerMap;
 - (void)shareData:(PDShareDataModel *)shareData onFinished:(void (^)(BOOL success, NSError * _Nullable error))onFinished;
 
 @end

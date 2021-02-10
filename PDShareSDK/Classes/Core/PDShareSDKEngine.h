@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)startEngine;
 
-- (void)registerChannel:(PDShareSDKChannel)channel
+- (BOOL)registerChannel:(PDShareSDKChannel)channel
               withBlock:(NSDictionary<NSString *, NSString *> *(^)(void))block;
 
 @end
