@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef struct {
-    const PDShareSDKChannel channel;
+    const NSInteger channel;
     const char *classname;
 } PDShareModuleExpInfo;
 
