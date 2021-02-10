@@ -1,1 +1,1 @@
-../../../../../PDShareSDK/Classes/Core/PDShareModule.h
+../../../../../PDShareSDK/Classes/Core/Module/PDShareModule.h

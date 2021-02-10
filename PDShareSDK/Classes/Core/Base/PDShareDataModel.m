@@ -38,7 +38,7 @@
     }
 
     if (self.webPageURL.length > 0) {
-        return PDShareContentTypeWebpage;
+        return PDShareContentTypeWebPage;
     }
 
     if (self.shareImage || self.shareImageFilePath.length > 0 || self.shareImageURL.length > 0) {

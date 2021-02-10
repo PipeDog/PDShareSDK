@@ -1,1 +1,1 @@
-../../../../../PDShareSDK/Classes/UI/PDShareChannelCell.h
+../../../../../PDShareSDK/Classes/UI/View/PDShareChannelCell.h

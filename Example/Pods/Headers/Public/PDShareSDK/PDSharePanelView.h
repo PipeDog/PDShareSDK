@@ -1,1 +1,1 @@
-../../../../../PDShareSDK/Classes/UI/PDSharePanelView.h
+../../../../../PDShareSDK/Classes/UI/View/PDSharePanelView.h

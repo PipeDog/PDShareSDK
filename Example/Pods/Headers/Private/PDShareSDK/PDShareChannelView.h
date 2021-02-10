@@ -1,1 +1,1 @@
-../../../../../PDShareSDK/Classes/UI/PDShareChannelView.h
+../../../../../PDShareSDK/Classes/UI/View/PDShareChannelView.h

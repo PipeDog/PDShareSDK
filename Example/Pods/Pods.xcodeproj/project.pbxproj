@@ -7,119 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01262357143DB564E10C80C57CF4B7DD /* PDShareManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC4A16A60383B74D31B4E3B1A01D8EE /* PDShareManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0FC86FA77ADFD03B0B2D3A501E243FAB /* PDShareChannelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E3889ADA24230959E344AEE656D18E /* PDShareChannelCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		158141D92A5EE6D738C53CE26E153C34 /* PDShareData.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A8F49C589A660C5E2C299223A9EEB4 /* PDShareData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		18859DBE63B0CD10A07E90FA6F55CD74 /* PDShareSDKCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 465505CECC47A7CE5DD2BBC7999F32DC /* PDShareSDKCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		256DD171C92AE036F43CFBBAE14929CD /* PDShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B736EDD9AC28EC0A64629FA4B0D36DAC /* PDShareModule.m */; };
-		2F8191D0220689E5A8C714134C9A4545 /* PDSharePanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30317A76B4F73347E0A1AF7B6F1EF179 /* PDSharePanelView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3049486AAF530AC2E192D971F7456911 /* PDShareModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E7DACF9BFB3AB108D021DA1259A1E7 /* PDShareModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		39D7B51FB92E2E329F96EDCDFEC1E3D9 /* PDShareError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8ED4D825B66AE2576F46B928C04B63 /* PDShareError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3AA7178DF82BFC9883BF5D5AA85A8370 /* PDShareError.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B594742A7FE6F57554F3FABF8EECA9 /* PDShareError.m */; };
-		3CD6D0E6FF817AE4D64E8F7E39B69557 /* ShareUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9302F2440F9A2C737905CD9B69C6F890 /* ShareUI.xcassets */; };
-		40E6854774A61898E11EC988B3D44500 /* PDShareChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69814A97774F4914F9939D6A7E64EE68 /* PDShareChannelView.m */; };
-		4E013C6D42877D63C95B398C46AAE7B5 /* PDShareModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 269DFCD4619E7F66009579F18A498AD0 /* PDShareModuleManager.m */; };
-		4F3A1D8808069422E762965E768D87D5 /* PDShareUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBB1BE81BB8D7CEFE36F6D979E9E888 /* PDShareUIManager.m */; };
-		55F9A779BAAB39085C65D1FFBCBD72C0 /* PDShareUIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B460E0C584798B7AAB1148BFC1376706 /* PDShareUIManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0FD266E192F44D51E44CD3D57A41C045 /* PDShareMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = B7890B3D0B4553E4BD6E6724FA27770A /* PDShareMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29A19463410897C73C50993FD83A32D1 /* PDShareError.h in Headers */ = {isa = PBXBuildFile; fileRef = F119F699E23B67FC09C1D0E921940F8D /* PDShareError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29DCEDB2715EA695C5A8909DA18A0C28 /* PDShareUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E49373C97E397924EAB6D8ECA21711E4 /* PDShareUIUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33C04AC9D159AEFCB8B332E203171646 /* PDShareModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 80360C8F738785EBC2625419380765F3 /* PDShareModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E730FD1135E562F4C91623CC6C2D648 /* PDShareUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E544B1B48650FF36A88DCB40097A8 /* PDShareUIUtils.m */; };
+		42D9907E563A823F256D540FD8D284E6 /* PDShareManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29EDFAB8FB507E1F719A960BBFFDCAA8 /* PDShareManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5431C42A0A9003A7D28A371B77F39C90 /* PDShareData.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E8DD7FB52DBA5801309DF30BA33F85 /* PDShareData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5A5574F3819C0858723095C1542A6BBE /* Pods-PDShareSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EBEC98F60AA3659BB14DC3557F013 /* Pods-PDShareSDK_Example-dummy.m */; };
-		5BB188317CAB1064F8FFC756BDE163CD /* PDShareDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 367469B628F43AAB803CA7E9756CA820 /* PDShareDataModel.m */; };
-		6034B512D0FDC48ACE17B2156BED75CC /* PDShareChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59130D4D5791B5AAB6A7EFAA94914D0B /* PDShareChannelView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		80343132285F40E85C5F3C029AFCCAD0 /* PDShareSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D75977BC243EC919AD5904666457DBBF /* PDShareSDK-dummy.m */; };
-		88CC9675671C63C3B0F32B9C7D7286AB /* PDShareDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EC2FDF9BC0DBFFB40ABE39C43765B7 /* PDShareDataModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9E0BEF48FA74D6B82FD486DE07BCCEDE /* PDSharePanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EE8B2C7A4D3B939F6481FEB148234D /* PDSharePanelView.m */; };
-		9F844BB1D025483AC5BFA037759AA585 /* PDShareModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 835AEF99BE95DA8593EA33719D5579E0 /* PDShareModuleManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ABF6EFEEDE4C6A3CAC3BFAF7E04345EA /* PDShareMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E851CCEE6D18B814AD49EC65280C1D /* PDShareMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B1084CC9C6FF8B118E31947D63AFCB37 /* PDShareSDKEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBB481E1CAC6DA1E4449EA33FB1C3A4 /* PDShareSDKEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B8E6CBF2E96AC41B8E54AB8FC4EA77D1 /* PDShareUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C50982558C62BDFFDCF34FA3B55E1F /* PDShareUIUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CDBDC5C434B2095475D04330016DB759 /* PDShareChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425EEBD5B057357CCA86AEE47E7EBF7 /* PDShareChannelCell.m */; };
-		D7536270E52FD6B494C9E7B31E5C5FA6 /* PDShareUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D15C96FE2004B4DB1E68002225A09D0C /* PDShareUIUtils.m */; };
-		DB23374B723666F79DE37C56D72C980E /* PDShareSDKDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8D0FDCD6AE7AD6E3A101A9E083A89B /* PDShareSDKDefinition.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DEEDA0212DCFD960686825769527DDC0 /* PDShareSDKEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A18728C131A5C23116433618E76BDE98 /* PDShareSDKEngine.m */; };
-		F03FCE6F02186C45EBF0B84265A2DA0B /* PDShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDCA1032E42F286DE0C991CD4BF518 /* PDShareManager.m */; };
-		F38C91C34129DA9FEE1CFFC15831DAC5 /* PDShareManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1D59EDA46995B19A36B909404A1795 /* PDShareManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D03814E08B2602CBA0A40074DD8C96A /* PDShareChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751F00BE6B043EC4D4600C5974C6FE7E /* PDShareChannelView.m */; };
+		6178F78AD8550CE9697222989F68F71E /* PDShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF63DCB362DB11B6A92E0D02FE0494EA /* PDShareManager.m */; };
+		62CB6B163FABC2DD0AB620F8FC904624 /* PDSharePanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B4F84E8F59B7B65B0DD11F17864C8B /* PDSharePanelView.m */; };
+		63A7B0D04E699D7BF595038A3E7F4E90 /* PDShareSDKEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CD9D66C57B50646569D734F264B4C6 /* PDShareSDKEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BA512C84CA332F2D1DB397FA2B26996 /* PDShareChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6091E21B0F1BD091874495B9FD2413 /* PDShareChannelCell.m */; };
+		6C1F833451619CAF66D28B3B1CA8013C /* PDShareSDKEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1360800D6F44EF033E9C6885E6A63 /* PDShareSDKEngine.m */; };
+		9DD104468F867A1AA973E38FF955C281 /* PDShareDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F104AB1E4E51A0F202311AEFD7D2EF /* PDShareDataModel.m */; };
+		A5047E3CFDB2AB21C55FFD2F5605F2AF /* PDShareUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF993A2D3B232B06C883728D7E2315E /* PDShareUIManager.m */; };
+		A9100E09074F3A1FA838115397F73F5E /* PDShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 838530D5B45C271AC1699C180BFED1F1 /* PDShareModule.m */; };
+		B02F621BC123FE8B2A452145E1785C0C /* PDShareSDKCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 571E63EFAFA3DCC1353389C3BF2B00B3 /* PDShareSDKCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B359F2736585A92017F51510D2DF3BDA /* PDShareModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A64350F9BFECB7EF5035F54596048C /* PDShareModuleManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8DCB386DEA93E6294021E4D04FC6F09 /* PDShareChannelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6820E5FCAEFF99A6B7367E7AF514CF /* PDShareChannelCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B92C09A1743D78F08DC7CC82257D9648 /* PDSharePanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C3C22F889DA2B225D11F50CB45DE7D /* PDSharePanelView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD46C03C43CC737134EF867CCCEE78DE /* ShareUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8629296C2406D05382C9DC65E561F1E /* ShareUI.xcassets */; };
+		BEA574380B820DFAA773B296A5415B5F /* PDShareDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E243F9E866D733CB5F6DD315A093E32 /* PDShareDataModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA2E959270BCE46945AA38FF7F0702D7 /* PDShareChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC8C3CCE6F919A9D8CAC991F2A46F25 /* PDShareChannelView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1EBCECD08FA603EE38213BCDEA4D2C3 /* PDShareError.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6D5ABECF2074016C9822801691DB18 /* PDShareError.m */; };
+		D868185063B5A26FEAE55142BEB00811 /* PDShareManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAE4EC4EF11436753671F333A9F3B00 /* PDShareManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC624784067B942854310D3C2DAABC03 /* PDShareSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 345B9A65EA4A6D258FFF1443B8A0F01A /* PDShareSDK-dummy.m */; };
+		DD817DDFE18F0601F8BCB45D5F04876B /* PDShareUIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E0571D47D2694A03BD9A707A17BAC6 /* PDShareUIManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E173D25086295D3932088E454E06CF81 /* PDShareModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D08D4BA0297350FF99A50415D8506 /* PDShareModuleManager.m */; };
+		FB6845366C50E49AD856AED2A48404B7 /* PDShareSDKDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 949634049F8BA6686ACC0324F2DD7B11 /* PDShareSDKDefinition.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FDA1C38A5CEF195FFEFC17DDE64B02BB /* Pods-PDShareSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70F53B1F47BC48B03F1E201F0A5899 /* Pods-PDShareSDK_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		05EFDCEF55F0A22E694BA8FB4AF86611 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1E82823F6E245F9B12B28CEEF6E69D5;
-			remoteInfo = PDShareSDK;
-		};
-		6F493A1E8C3CA6A9A8EFE297E43773C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9476EEF46CF640BA2099C554D23595A;
-			remoteInfo = "PDShareSDK-PDShareSDK";
-		};
-		DD4ACE04C9B7E99AAEECFAF775D3CC92 /* PBXContainerItemProxy */ = {
+		52E2C6BF1D9629B53E91CAD241883FE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1BDE819589CCC26897831D3D63922F57;
 			remoteInfo = "Pods-PDShareSDK_Example";
 		};
+		9D1DC644379BD452628C17DA77F251CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9476EEF46CF640BA2099C554D23595A;
+			remoteInfo = "PDShareSDK-PDShareSDK";
+		};
+		E19AD16C2404B0EF796E11652E11F85D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E82823F6E245F9B12B28CEEF6E69D5;
+			remoteInfo = PDShareSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05DDCA1032E42F286DE0C991CD4BF518 /* PDShareManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareManager.m; sourceTree = "<group>"; };
-		082EF1476F0E0AECAE7000697093F9D3 /* PDShareSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDShareSDK.release.xcconfig; sourceTree = "<group>"; };
 		0A70F53B1F47BC48B03F1E201F0A5899 /* Pods-PDShareSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDShareSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		16A8F49C589A660C5E2C299223A9EEB4 /* PDShareData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareData.h; sourceTree = "<group>"; };
-		1B8D0FDCD6AE7AD6E3A101A9E083A89B /* PDShareSDKDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareSDKDefinition.h; sourceTree = "<group>"; };
-		21E9247AC343D41394405BC1F6F811BD /* PDShareSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PDShareSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		22EE8B2C7A4D3B939F6481FEB148234D /* PDSharePanelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDSharePanelView.m; sourceTree = "<group>"; };
-		269DFCD4619E7F66009579F18A498AD0 /* PDShareModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareModuleManager.m; sourceTree = "<group>"; };
-		30317A76B4F73347E0A1AF7B6F1EF179 /* PDSharePanelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDSharePanelView.h; sourceTree = "<group>"; };
-		31E3889ADA24230959E344AEE656D18E /* PDShareChannelCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareChannelCell.h; sourceTree = "<group>"; };
-		3425EEBD5B057357CCA86AEE47E7EBF7 /* PDShareChannelCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareChannelCell.m; sourceTree = "<group>"; };
-		367469B628F43AAB803CA7E9756CA820 /* PDShareDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareDataModel.m; sourceTree = "<group>"; };
+		106F7ACACCB081B2762CC95FBD7C187E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		10E8DD7FB52DBA5801309DF30BA33F85 /* PDShareData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareData.h; sourceTree = "<group>"; };
+		18E0571D47D2694A03BD9A707A17BAC6 /* PDShareUIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareUIManager.h; sourceTree = "<group>"; };
+		22E1360800D6F44EF033E9C6885E6A63 /* PDShareSDKEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareSDKEngine.m; sourceTree = "<group>"; };
+		272E544B1B48650FF36A88DCB40097A8 /* PDShareUIUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareUIUtils.m; sourceTree = "<group>"; };
+		29C3C22F889DA2B225D11F50CB45DE7D /* PDSharePanelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDSharePanelView.h; sourceTree = "<group>"; };
+		29EDFAB8FB507E1F719A960BBFFDCAA8 /* PDShareManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareManager.h; sourceTree = "<group>"; };
+		345B9A65EA4A6D258FFF1443B8A0F01A /* PDShareSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDShareSDK-dummy.m"; sourceTree = "<group>"; };
+		3606B666E1BFBC082CF1B1D3CEC3B796 /* PDShareSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDShareSDK.release.xcconfig; sourceTree = "<group>"; };
 		3779918EDC8D6445EF40322835DA418D /* Pods-PDShareSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDShareSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3F93AA650CDAC6F99613248841A922E0 /* Pods-PDShareSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDShareSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		465505CECC47A7CE5DD2BBC7999F32DC /* PDShareSDKCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareSDKCallback.h; sourceTree = "<group>"; };
 		4A203AF20605A60CC18F92A6ECA9D2E1 /* libPDShareSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPDShareSDK.a; path = libPDShareSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0D23FCA2E8424BB9EED7FFDF9EEEA6 /* PDShareSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDShareSDK.debug.xcconfig; sourceTree = "<group>"; };
 		4DFAE9085B868FF968E1253D56C291E5 /* libPods-PDShareSDK_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PDShareSDK_Tests.a"; path = "libPods-PDShareSDK_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A4950B29357FB578CE1A962E93407B /* Pods-PDShareSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PDShareSDK_Example-resources.sh"; sourceTree = "<group>"; };
-		55D8A047FACF2F56C238ECBE3C5C6089 /* PDShareSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDShareSDK-prefix.pch"; sourceTree = "<group>"; };
-		59130D4D5791B5AAB6A7EFAA94914D0B /* PDShareChannelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareChannelView.h; sourceTree = "<group>"; };
-		63C50982558C62BDFFDCF34FA3B55E1F /* PDShareUIUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareUIUtils.h; sourceTree = "<group>"; };
+		571E63EFAFA3DCC1353389C3BF2B00B3 /* PDShareSDKCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareSDKCallback.h; sourceTree = "<group>"; };
+		587F68458211BB946F2D88A827C457F9 /* PDShareSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDShareSDK-prefix.pch"; sourceTree = "<group>"; };
+		5C9D08D4BA0297350FF99A50415D8506 /* PDShareModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareModuleManager.m; sourceTree = "<group>"; };
+		5E243F9E866D733CB5F6DD315A093E32 /* PDShareDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareDataModel.h; sourceTree = "<group>"; };
 		6420ED5112FFE80009BA243F3F05555B /* PDShareSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PDShareSDK.bundle; path = "PDShareSDK-PDShareSDK.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69814A97774F4914F9939D6A7E64EE68 /* PDShareChannelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareChannelView.m; sourceTree = "<group>"; };
-		6D8ED4D825B66AE2576F46B928C04B63 /* PDShareError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareError.h; sourceTree = "<group>"; };
-		70E851CCEE6D18B814AD49EC65280C1D /* PDShareMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareMacro.h; sourceTree = "<group>"; };
-		72E7DACF9BFB3AB108D021DA1259A1E7 /* PDShareModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareModule.h; sourceTree = "<group>"; };
-		835AEF99BE95DA8593EA33719D5579E0 /* PDShareModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareModuleManager.h; sourceTree = "<group>"; };
-		8EBB481E1CAC6DA1E4449EA33FB1C3A4 /* PDShareSDKEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareSDKEngine.h; sourceTree = "<group>"; };
-		9302F2440F9A2C737905CD9B69C6F890 /* ShareUI.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ShareUI.xcassets; path = PDShareSDK/Assets/ShareUI.xcassets; sourceTree = "<group>"; };
-		9376E004A3C5D0A5D9C23D4AADF5E2FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6EC8C3CCE6F919A9D8CAC991F2A46F25 /* PDShareChannelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareChannelView.h; sourceTree = "<group>"; };
+		751F00BE6B043EC4D4600C5974C6FE7E /* PDShareChannelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareChannelView.m; sourceTree = "<group>"; };
+		80360C8F738785EBC2625419380765F3 /* PDShareModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareModule.h; sourceTree = "<group>"; };
+		838530D5B45C271AC1699C180BFED1F1 /* PDShareModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareModule.m; sourceTree = "<group>"; };
+		86D54996BF4BD2A13B4AAEEFF7AAB6E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		949634049F8BA6686ACC0324F2DD7B11 /* PDShareSDKDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareSDKDefinition.h; sourceTree = "<group>"; };
 		966EBEC98F60AA3659BB14DC3557F013 /* Pods-PDShareSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDShareSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		99F9E0B4B95E81D991794D2073F50E2B /* Pods-PDShareSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDShareSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C6091E21B0F1BD091874495B9FD2413 /* PDShareChannelCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareChannelCell.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A15ADF2DF10BA199C13DDC3D3BA4858A /* libPods-PDShareSDK_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PDShareSDK_Example.a"; path = "libPods-PDShareSDK_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A18728C131A5C23116433618E76BDE98 /* PDShareSDKEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareSDKEngine.m; sourceTree = "<group>"; };
-		AEF025168AA380FF68B39AC17D17D961 /* ResourceBundle-PDShareSDK-PDShareSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PDShareSDK-PDShareSDK-Info.plist"; sourceTree = "<group>"; };
+		AB6820E5FCAEFF99A6B7367E7AF514CF /* PDShareChannelCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareChannelCell.h; sourceTree = "<group>"; };
+		AB6D5ABECF2074016C9822801691DB18 /* PDShareError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareError.m; sourceTree = "<group>"; };
 		AEFC441E9086B8FE0B3DB8C88F84D007 /* Pods-PDShareSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDShareSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B460E0C584798B7AAB1148BFC1376706 /* PDShareUIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareUIManager.h; sourceTree = "<group>"; };
-		B709BA5A582854F47C512B7911661DF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B736EDD9AC28EC0A64629FA4B0D36DAC /* PDShareModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareModule.m; sourceTree = "<group>"; };
-		B7EC2FDF9BC0DBFFB40ABE39C43765B7 /* PDShareDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareDataModel.h; sourceTree = "<group>"; };
+		AF63DCB362DB11B6A92E0D02FE0494EA /* PDShareManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareManager.m; sourceTree = "<group>"; };
+		B7890B3D0B4553E4BD6E6724FA27770A /* PDShareMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareMacro.h; sourceTree = "<group>"; };
+		B9F104AB1E4E51A0F202311AEFD7D2EF /* PDShareDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareDataModel.m; sourceTree = "<group>"; };
 		BDD32304808423A096716BA3B8DA7ABC /* Pods-PDShareSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDShareSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C1E697445C632B7F1430574DE05A29 /* PDShareSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PDShareSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1B8317B66DCEB6E6864FFC81E1EA1EF /* Pods-PDShareSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDShareSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CB1D59EDA46995B19A36B909404A1795 /* PDShareManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDShareManager+Internal.h"; sourceTree = "<group>"; };
-		CDBB1BE81BB8D7CEFE36F6D979E9E888 /* PDShareUIManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareUIManager.m; sourceTree = "<group>"; };
-		D15C96FE2004B4DB1E68002225A09D0C /* PDShareUIUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareUIUtils.m; sourceTree = "<group>"; };
-		D75977BC243EC919AD5904666457DBBF /* PDShareSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDShareSDK-dummy.m"; sourceTree = "<group>"; };
-		D81997DD1015A9F48B16B46055D306D6 /* PDShareSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDShareSDK.debug.xcconfig; sourceTree = "<group>"; };
-		D9B594742A7FE6F57554F3FABF8EECA9 /* PDShareError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareError.m; sourceTree = "<group>"; };
+		C4CD9D66C57B50646569D734F264B4C6 /* PDShareSDKEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareSDKEngine.h; sourceTree = "<group>"; };
+		C9A64350F9BFECB7EF5035F54596048C /* PDShareModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareModuleManager.h; sourceTree = "<group>"; };
+		D5B4F84E8F59B7B65B0DD11F17864C8B /* PDSharePanelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDSharePanelView.m; sourceTree = "<group>"; };
 		DF4261F88615F2567FC0BE265498B96D /* Pods-PDShareSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDShareSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E49373C97E397924EAB6D8ECA21711E4 /* PDShareUIUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareUIUtils.h; sourceTree = "<group>"; };
+		E986607C960A055C700A282167EFC9C0 /* ResourceBundle-PDShareSDK-PDShareSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PDShareSDK-PDShareSDK-Info.plist"; sourceTree = "<group>"; };
 		EF4F21FF8D09985D69B4085963A28549 /* Pods-PDShareSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDShareSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FEC4A16A60383B74D31B4E3B1A01D8EE /* PDShareManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareManager.h; sourceTree = "<group>"; };
+		F119F699E23B67FC09C1D0E921940F8D /* PDShareError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDShareError.h; sourceTree = "<group>"; };
+		F8629296C2406D05382C9DC65E561F1E /* ShareUI.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ShareUI.xcassets; path = PDShareSDK/Assets/ShareUI.xcassets; sourceTree = "<group>"; };
+		FAAE4EC4EF11436753671F333A9F3B00 /* PDShareManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDShareManager+Internal.h"; sourceTree = "<group>"; };
+		FCF993A2D3B232B06C883728D7E2315E /* PDShareUIManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDShareUIManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2943BCF48B885B7D0D32B35249CEC9B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F64B9A5F017707057EBF2999DA5B18C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,13 +135,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5138588EF2ABBED6DA2D68CE7CF8373D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C20A69742079777FBC9381553835542 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,25 +164,6 @@
 			path = "Target Support Files/Pods-PDShareSDK_Tests";
 			sourceTree = "<group>";
 		};
-		0ABF7692C59F99BEED4410C6DB1A1CC7 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				31E3889ADA24230959E344AEE656D18E /* PDShareChannelCell.h */,
-				3425EEBD5B057357CCA86AEE47E7EBF7 /* PDShareChannelCell.m */,
-				59130D4D5791B5AAB6A7EFAA94914D0B /* PDShareChannelView.h */,
-				69814A97774F4914F9939D6A7E64EE68 /* PDShareChannelView.m */,
-				70E851CCEE6D18B814AD49EC65280C1D /* PDShareMacro.h */,
-				30317A76B4F73347E0A1AF7B6F1EF179 /* PDSharePanelView.h */,
-				22EE8B2C7A4D3B939F6481FEB148234D /* PDSharePanelView.m */,
-				B460E0C584798B7AAB1148BFC1376706 /* PDShareUIManager.h */,
-				CDBB1BE81BB8D7CEFE36F6D979E9E888 /* PDShareUIManager.m */,
-				63C50982558C62BDFFDCF34FA3B55E1F /* PDShareUIUtils.h */,
-				D15C96FE2004B4DB1E68002225A09D0C /* PDShareUIUtils.m */,
-			);
-			name = UI;
-			path = PDShareSDK/Classes/UI;
-			sourceTree = "<group>";
-		};
 		24CDC3CEBAE608D4217ADF0F3298FBF6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,57 +173,119 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		41C04BF0EE70C631B0EF605884BBF63D /* Support Files */ = {
+		25D7489CAB4A9E8425E3FA2C52C2171B /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				D75977BC243EC919AD5904666457DBBF /* PDShareSDK-dummy.m */,
-				55D8A047FACF2F56C238ECBE3C5C6089 /* PDShareSDK-prefix.pch */,
-				D81997DD1015A9F48B16B46055D306D6 /* PDShareSDK.debug.xcconfig */,
-				082EF1476F0E0AECAE7000697093F9D3 /* PDShareSDK.release.xcconfig */,
-				AEF025168AA380FF68B39AC17D17D961 /* ResourceBundle-PDShareSDK-PDShareSDK-Info.plist */,
+				80360C8F738785EBC2625419380765F3 /* PDShareModule.h */,
+				838530D5B45C271AC1699C180BFED1F1 /* PDShareModule.m */,
+				C9A64350F9BFECB7EF5035F54596048C /* PDShareModuleManager.h */,
+				5C9D08D4BA0297350FF99A50415D8506 /* PDShareModuleManager.m */,
+			);
+			name = Module;
+			path = Module;
+			sourceTree = "<group>";
+		};
+		37DCB937712510A7FA2945B42D35E885 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				345B9A65EA4A6D258FFF1443B8A0F01A /* PDShareSDK-dummy.m */,
+				587F68458211BB946F2D88A827C457F9 /* PDShareSDK-prefix.pch */,
+				4C0D23FCA2E8424BB9EED7FFDF9EEEA6 /* PDShareSDK.debug.xcconfig */,
+				3606B666E1BFBC082CF1B1D3CEC3B796 /* PDShareSDK.release.xcconfig */,
+				E986607C960A055C700A282167EFC9C0 /* ResourceBundle-PDShareSDK-PDShareSDK-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PDShareSDK";
 			sourceTree = "<group>";
 		};
+		4CC2A72D941BCD337429F7C051C0525A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B7890B3D0B4553E4BD6E6724FA27770A /* PDShareMacro.h */,
+				E49373C97E397924EAB6D8ECA21711E4 /* PDShareUIUtils.h */,
+				272E544B1B48650FF36A88DCB40097A8 /* PDShareUIUtils.m */,
+			);
+			name = Util;
+			path = Util;
+			sourceTree = "<group>";
+		};
 		60DC00442F5EB7F39A211A89ABBD7BE5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F092749CC3EFC2AD66D7EF537AA4F374 /* PDShareSDK */,
+				945B43170DB38999B8D13AEC74328012 /* PDShareSDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6FA6891031EC57BD6FC681FAFBDFA3E7 /* Core */ = {
+		668E6A0554D0DA85A9445DF4DA9A15AA /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				16A8F49C589A660C5E2C299223A9EEB4 /* PDShareData.h */,
-				B7EC2FDF9BC0DBFFB40ABE39C43765B7 /* PDShareDataModel.h */,
-				367469B628F43AAB803CA7E9756CA820 /* PDShareDataModel.m */,
-				6D8ED4D825B66AE2576F46B928C04B63 /* PDShareError.h */,
-				D9B594742A7FE6F57554F3FABF8EECA9 /* PDShareError.m */,
-				FEC4A16A60383B74D31B4E3B1A01D8EE /* PDShareManager.h */,
-				05DDCA1032E42F286DE0C991CD4BF518 /* PDShareManager.m */,
-				CB1D59EDA46995B19A36B909404A1795 /* PDShareManager+Internal.h */,
-				72E7DACF9BFB3AB108D021DA1259A1E7 /* PDShareModule.h */,
-				B736EDD9AC28EC0A64629FA4B0D36DAC /* PDShareModule.m */,
-				835AEF99BE95DA8593EA33719D5579E0 /* PDShareModuleManager.h */,
-				269DFCD4619E7F66009579F18A498AD0 /* PDShareModuleManager.m */,
-				465505CECC47A7CE5DD2BBC7999F32DC /* PDShareSDKCallback.h */,
-				1B8D0FDCD6AE7AD6E3A101A9E083A89B /* PDShareSDKDefinition.h */,
-				8EBB481E1CAC6DA1E4449EA33FB1C3A4 /* PDShareSDKEngine.h */,
-				A18728C131A5C23116433618E76BDE98 /* PDShareSDKEngine.m */,
+				106F7ACACCB081B2762CC95FBD7C187E /* LICENSE */,
+				C0C1E697445C632B7F1430574DE05A29 /* PDShareSDK.podspec */,
+				86D54996BF4BD2A13B4AAEEFF7AAB6E9 /* README.md */,
 			);
-			name = Core;
-			path = PDShareSDK/Classes/Core;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		B6F70375855F5A29C2C26C04327831E1 /* Resources */ = {
+		6CBFAC620E17845926352E58C5B1C3B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9302F2440F9A2C737905CD9B69C6F890 /* ShareUI.xcassets */,
+				F8629296C2406D05382C9DC65E561F1E /* ShareUI.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		6E7A8E87BAD0ABE7BE4842B89A762000 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				10E8DD7FB52DBA5801309DF30BA33F85 /* PDShareData.h */,
+				5E243F9E866D733CB5F6DD315A093E32 /* PDShareDataModel.h */,
+				B9F104AB1E4E51A0F202311AEFD7D2EF /* PDShareDataModel.m */,
+				F119F699E23B67FC09C1D0E921940F8D /* PDShareError.h */,
+				AB6D5ABECF2074016C9822801691DB18 /* PDShareError.m */,
+				571E63EFAFA3DCC1353389C3BF2B00B3 /* PDShareSDKCallback.h */,
+				949634049F8BA6686ACC0324F2DD7B11 /* PDShareSDKDefinition.h */,
+			);
+			name = Base;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7C3E940102389FFE356DBC6D0A2C338D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D50F5ECDFE517382E9E24577606B8461 /* Manager */,
+				4CC2A72D941BCD337429F7C051C0525A /* Util */,
+				A11E3AAB186524C9CC0AE4B19B386A56 /* View */,
+			);
+			name = UI;
+			path = PDShareSDK/Classes/UI;
+			sourceTree = "<group>";
+		};
+		945B43170DB38999B8D13AEC74328012 /* PDShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F04FB3FE89403659F46C0D636C9B0EE4 /* Core */,
+				668E6A0554D0DA85A9445DF4DA9A15AA /* Pod */,
+				6CBFAC620E17845926352E58C5B1C3B5 /* Resources */,
+				37DCB937712510A7FA2945B42D35E885 /* Support Files */,
+				7C3E940102389FFE356DBC6D0A2C338D /* UI */,
+			);
+			name = PDShareSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A11E3AAB186524C9CC0AE4B19B386A56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB6820E5FCAEFF99A6B7367E7AF514CF /* PDShareChannelCell.h */,
+				9C6091E21B0F1BD091874495B9FD2413 /* PDShareChannelCell.m */,
+				6EC8C3CCE6F919A9D8CAC991F2A46F25 /* PDShareChannelView.h */,
+				751F00BE6B043EC4D4600C5974C6FE7E /* PDShareChannelView.m */,
+				29C3C22F889DA2B225D11F50CB45DE7D /* PDSharePanelView.h */,
+				D5B4F84E8F59B7B65B0DD11F17864C8B /* PDSharePanelView.m */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		B7ACB764E72849586D7F12EE68C90AC8 /* Products */ = {
@@ -267,6 +310,17 @@
 			);
 			sourceTree = "<group>";
 		};
+		D0D23ABC3F4E0E46D1DF5CBD6D282640 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				29EDFAB8FB507E1F719A960BBFFDCAA8 /* PDShareManager.h */,
+				AF63DCB362DB11B6A92E0D02FE0494EA /* PDShareManager.m */,
+				FAAE4EC4EF11436753671F333A9F3B00 /* PDShareManager+Internal.h */,
+			);
+			name = Manager;
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		D361703910FB4A1BE16722DBCD2B8500 /* Pods-PDShareSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +335,26 @@
 			path = "Target Support Files/Pods-PDShareSDK_Example";
 			sourceTree = "<group>";
 		};
+		D44E820C1C25CB2D5897165CBBADB620 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD9D66C57B50646569D734F264B4C6 /* PDShareSDKEngine.h */,
+				22E1360800D6F44EF033E9C6885E6A63 /* PDShareSDKEngine.m */,
+			);
+			name = Engine;
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		D50F5ECDFE517382E9E24577606B8461 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				18E0571D47D2694A03BD9A707A17BAC6 /* PDShareUIManager.h */,
+				FCF993A2D3B232B06C883728D7E2315E /* PDShareUIManager.m */,
+			);
+			name = Manager;
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,27 +362,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F092749CC3EFC2AD66D7EF537AA4F374 /* PDShareSDK */ = {
+		F04FB3FE89403659F46C0D636C9B0EE4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				6FA6891031EC57BD6FC681FAFBDFA3E7 /* Core */,
-				F2FC76C1C9542D35678AA150B1BBED51 /* Pod */,
-				B6F70375855F5A29C2C26C04327831E1 /* Resources */,
-				41C04BF0EE70C631B0EF605884BBF63D /* Support Files */,
-				0ABF7692C59F99BEED4410C6DB1A1CC7 /* UI */,
+				6E7A8E87BAD0ABE7BE4842B89A762000 /* Base */,
+				D44E820C1C25CB2D5897165CBBADB620 /* Engine */,
+				D0D23ABC3F4E0E46D1DF5CBD6D282640 /* Manager */,
+				25D7489CAB4A9E8425E3FA2C52C2171B /* Module */,
 			);
-			name = PDShareSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		F2FC76C1C9542D35678AA150B1BBED51 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B709BA5A582854F47C512B7911661DF4 /* LICENSE */,
-				21E9247AC343D41394405BC1F6F811BD /* PDShareSDK.podspec */,
-				9376E004A3C5D0A5D9C23D4AADF5E2FA /* README.md */,
-			);
-			name = Pod;
+			name = Core;
+			path = PDShareSDK/Classes/Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,26 +384,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDC843787BE22671343D2DA43A806CEB /* Headers */ = {
+		E139D9DCFBDEBAB78C45D7E935ECCFFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC86FA77ADFD03B0B2D3A501E243FAB /* PDShareChannelCell.h in Headers */,
-				6034B512D0FDC48ACE17B2156BED75CC /* PDShareChannelView.h in Headers */,
-				158141D92A5EE6D738C53CE26E153C34 /* PDShareData.h in Headers */,
-				88CC9675671C63C3B0F32B9C7D7286AB /* PDShareDataModel.h in Headers */,
-				39D7B51FB92E2E329F96EDCDFEC1E3D9 /* PDShareError.h in Headers */,
-				ABF6EFEEDE4C6A3CAC3BFAF7E04345EA /* PDShareMacro.h in Headers */,
-				F38C91C34129DA9FEE1CFFC15831DAC5 /* PDShareManager+Internal.h in Headers */,
-				01262357143DB564E10C80C57CF4B7DD /* PDShareManager.h in Headers */,
-				3049486AAF530AC2E192D971F7456911 /* PDShareModule.h in Headers */,
-				9F844BB1D025483AC5BFA037759AA585 /* PDShareModuleManager.h in Headers */,
-				2F8191D0220689E5A8C714134C9A4545 /* PDSharePanelView.h in Headers */,
-				18859DBE63B0CD10A07E90FA6F55CD74 /* PDShareSDKCallback.h in Headers */,
-				DB23374B723666F79DE37C56D72C980E /* PDShareSDKDefinition.h in Headers */,
-				B1084CC9C6FF8B118E31947D63AFCB37 /* PDShareSDKEngine.h in Headers */,
-				55F9A779BAAB39085C65D1FFBCBD72C0 /* PDShareUIManager.h in Headers */,
-				B8E6CBF2E96AC41B8E54AB8FC4EA77D1 /* PDShareUIUtils.h in Headers */,
+				B8DCB386DEA93E6294021E4D04FC6F09 /* PDShareChannelCell.h in Headers */,
+				CA2E959270BCE46945AA38FF7F0702D7 /* PDShareChannelView.h in Headers */,
+				5431C42A0A9003A7D28A371B77F39C90 /* PDShareData.h in Headers */,
+				BEA574380B820DFAA773B296A5415B5F /* PDShareDataModel.h in Headers */,
+				29A19463410897C73C50993FD83A32D1 /* PDShareError.h in Headers */,
+				0FD266E192F44D51E44CD3D57A41C045 /* PDShareMacro.h in Headers */,
+				D868185063B5A26FEAE55142BEB00811 /* PDShareManager+Internal.h in Headers */,
+				42D9907E563A823F256D540FD8D284E6 /* PDShareManager.h in Headers */,
+				33C04AC9D159AEFCB8B332E203171646 /* PDShareModule.h in Headers */,
+				B359F2736585A92017F51510D2DF3BDA /* PDShareModuleManager.h in Headers */,
+				B92C09A1743D78F08DC7CC82257D9648 /* PDSharePanelView.h in Headers */,
+				B02F621BC123FE8B2A452145E1785C0C /* PDShareSDKCallback.h in Headers */,
+				FB6845366C50E49AD856AED2A48404B7 /* PDShareSDKDefinition.h in Headers */,
+				63A7B0D04E699D7BF595038A3E7F4E90 /* PDShareSDKEngine.h in Headers */,
+				DD817DDFE18F0601F8BCB45D5F04876B /* PDShareUIManager.h in Headers */,
+				29DCEDB2715EA695C5A8909DA18A0C28 /* PDShareUIUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +428,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2E087185E8CD5FAC874DAD813AF7D4A4 /* PBXTargetDependency */,
+				3C311886BB317BA028E1810FDDDDBA84 /* PBXTargetDependency */,
 			);
 			name = "Pods-PDShareSDK_Example";
 			productName = "Pods-PDShareSDK_Example";
@@ -383,7 +446,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D3A5B5285842F142FE36F43B67969517 /* PBXTargetDependency */,
+				9F60CFBDFA05D68E5B5A2F31B771B046 /* PBXTargetDependency */,
 			);
 			name = "Pods-PDShareSDK_Tests";
 			productName = "Pods-PDShareSDK_Tests";
@@ -394,14 +457,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81EA3A247A75C72DB8CAE07B578B8278 /* Build configuration list for PBXNativeTarget "PDShareSDK" */;
 			buildPhases = (
-				DDC843787BE22671343D2DA43A806CEB /* Headers */,
-				D3C9DB7C09ED28F8A25B44D801076A0F /* Sources */,
+				E139D9DCFBDEBAB78C45D7E935ECCFFD /* Headers */,
+				FC3456D51B4ED7986970008F59B2D656 /* Sources */,
 				B4CF2834E98A519A5002D74FDB64B6F0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA6F954B8D83AE29F5AEA16E5DE305B8 /* PBXTargetDependency */,
+				5DC241E05596A8F8F2E881CE582D98B7 /* PBXTargetDependency */,
 			);
 			name = PDShareSDK;
 			productName = PDShareSDK;
@@ -410,11 +473,11 @@
 		};
 		D9476EEF46CF640BA2099C554D23595A /* PDShareSDK-PDShareSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC0BFB0CF297E564EFA90720D23382EA /* Build configuration list for PBXNativeTarget "PDShareSDK-PDShareSDK" */;
+			buildConfigurationList = C2F5BC3F89062D18E489B9C91EAA4844 /* Build configuration list for PBXNativeTarget "PDShareSDK-PDShareSDK" */;
 			buildPhases = (
-				343E2C5FDAB34142F501C838DFECEC04 /* Sources */,
-				7C20A69742079777FBC9381553835542 /* Frameworks */,
-				DAFE3E3794661C84C750C614718D5896 /* Resources */,
+				7B63B6F229440460F27B7613F5C76962 /* Sources */,
+				2943BCF48B885B7D0D32B35249CEC9B0 /* Frameworks */,
+				DC1205057854124247B65E68AEEEC43C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -456,11 +519,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DAFE3E3794661C84C750C614718D5896 /* Resources */ = {
+		DC1205057854124247B65E68AEEEC43C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD6D0E6FF817AE4D64E8F7E39B69557 /* ShareUI.xcassets in Resources */,
+				BD46C03C43CC737134EF867CCCEE78DE /* ShareUI.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +538,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		343E2C5FDAB34142F501C838DFECEC04 /* Sources */ = {
+		7B63B6F229440460F27B7613F5C76962 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -490,45 +553,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3C9DB7C09ED28F8A25B44D801076A0F /* Sources */ = {
+		FC3456D51B4ED7986970008F59B2D656 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBDC5C434B2095475D04330016DB759 /* PDShareChannelCell.m in Sources */,
-				40E6854774A61898E11EC988B3D44500 /* PDShareChannelView.m in Sources */,
-				5BB188317CAB1064F8FFC756BDE163CD /* PDShareDataModel.m in Sources */,
-				3AA7178DF82BFC9883BF5D5AA85A8370 /* PDShareError.m in Sources */,
-				F03FCE6F02186C45EBF0B84265A2DA0B /* PDShareManager.m in Sources */,
-				256DD171C92AE036F43CFBBAE14929CD /* PDShareModule.m in Sources */,
-				4E013C6D42877D63C95B398C46AAE7B5 /* PDShareModuleManager.m in Sources */,
-				9E0BEF48FA74D6B82FD486DE07BCCEDE /* PDSharePanelView.m in Sources */,
-				80343132285F40E85C5F3C029AFCCAD0 /* PDShareSDK-dummy.m in Sources */,
-				DEEDA0212DCFD960686825769527DDC0 /* PDShareSDKEngine.m in Sources */,
-				4F3A1D8808069422E762965E768D87D5 /* PDShareUIManager.m in Sources */,
-				D7536270E52FD6B494C9E7B31E5C5FA6 /* PDShareUIUtils.m in Sources */,
+				6BA512C84CA332F2D1DB397FA2B26996 /* PDShareChannelCell.m in Sources */,
+				5D03814E08B2602CBA0A40074DD8C96A /* PDShareChannelView.m in Sources */,
+				9DD104468F867A1AA973E38FF955C281 /* PDShareDataModel.m in Sources */,
+				D1EBCECD08FA603EE38213BCDEA4D2C3 /* PDShareError.m in Sources */,
+				6178F78AD8550CE9697222989F68F71E /* PDShareManager.m in Sources */,
+				A9100E09074F3A1FA838115397F73F5E /* PDShareModule.m in Sources */,
+				E173D25086295D3932088E454E06CF81 /* PDShareModuleManager.m in Sources */,
+				62CB6B163FABC2DD0AB620F8FC904624 /* PDSharePanelView.m in Sources */,
+				DC624784067B942854310D3C2DAABC03 /* PDShareSDK-dummy.m in Sources */,
+				6C1F833451619CAF66D28B3B1CA8013C /* PDShareSDKEngine.m in Sources */,
+				A5047E3CFDB2AB21C55FFD2F5605F2AF /* PDShareUIManager.m in Sources */,
+				3E730FD1135E562F4C91623CC6C2D648 /* PDShareUIUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E087185E8CD5FAC874DAD813AF7D4A4 /* PBXTargetDependency */ = {
+		3C311886BB317BA028E1810FDDDDBA84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PDShareSDK;
 			target = D1E82823F6E245F9B12B28CEEF6E69D5 /* PDShareSDK */;
-			targetProxy = 05EFDCEF55F0A22E694BA8FB4AF86611 /* PBXContainerItemProxy */;
+			targetProxy = E19AD16C2404B0EF796E11652E11F85D /* PBXContainerItemProxy */;
 		};
-		BA6F954B8D83AE29F5AEA16E5DE305B8 /* PBXTargetDependency */ = {
+		5DC241E05596A8F8F2E881CE582D98B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PDShareSDK-PDShareSDK";
 			target = D9476EEF46CF640BA2099C554D23595A /* PDShareSDK-PDShareSDK */;
-			targetProxy = 6F493A1E8C3CA6A9A8EFE297E43773C9 /* PBXContainerItemProxy */;
+			targetProxy = 9D1DC644379BD452628C17DA77F251CC /* PBXContainerItemProxy */;
 		};
-		D3A5B5285842F142FE36F43B67969517 /* PBXTargetDependency */ = {
+		9F60CFBDFA05D68E5B5A2F31B771B046 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PDShareSDK_Example";
 			target = 1BDE819589CCC26897831D3D63922F57 /* Pods-PDShareSDK_Example */;
-			targetProxy = DD4ACE04C9B7E99AAEECFAF775D3CC92 /* PBXContainerItemProxy */;
+			targetProxy = 52E2C6BF1D9629B53E91CAD241883FE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,22 +616,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		0EEAE5873173EB24B2EE65C70C4A8C99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D81997DD1015A9F48B16B46055D306D6 /* PDShareSDK.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PDShareSDK";
-				IBSC_MODULE = PDShareSDK;
-				INFOPLIST_FILE = "Target Support Files/PDShareSDK/ResourceBundle-PDShareSDK-PDShareSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = PDShareSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		33710AD32BC52D6553B5310EC31F648B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -613,7 +660,7 @@
 		};
 		3FAFCD7FB5D85F7C067E92213B9A8E14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 082EF1476F0E0AECAE7000697093F9D3 /* PDShareSDK.release.xcconfig */;
+			baseConfigurationReference = 3606B666E1BFBC082CF1B1D3CEC3B796 /* PDShareSDK.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -637,7 +684,7 @@
 		};
 		408774693C668E34A930B5145423E1A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D81997DD1015A9F48B16B46055D306D6 /* PDShareSDK.debug.xcconfig */;
+			baseConfigurationReference = 4C0D23FCA2E8424BB9EED7FFDF9EEEA6 /* PDShareSDK.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -678,9 +725,9 @@
 			};
 			name = Debug;
 		};
-		64C0AE6CD444B8A72F879B4A81F29527 /* Release */ = {
+		51E094478F9EF0C0887880C60A9794B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 082EF1476F0E0AECAE7000697093F9D3 /* PDShareSDK.release.xcconfig */;
+			baseConfigurationReference = 4C0D23FCA2E8424BB9EED7FFDF9EEEA6 /* PDShareSDK.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PDShareSDK";
 				IBSC_MODULE = PDShareSDK;
@@ -692,7 +739,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 		C14E932D4C3EFCC589F7DEABCEC18F22 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -752,6 +799,22 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EBF58B37D285FC2E9BF48054665CE7BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3606B666E1BFBC082CF1B1D3CEC3B796 /* PDShareSDK.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PDShareSDK";
+				IBSC_MODULE = PDShareSDK;
+				INFOPLIST_FILE = "Target Support Files/PDShareSDK/ResourceBundle-PDShareSDK-PDShareSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = PDShareSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -859,11 +922,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC0BFB0CF297E564EFA90720D23382EA /* Build configuration list for PBXNativeTarget "PDShareSDK-PDShareSDK" */ = {
+		C2F5BC3F89062D18E489B9C91EAA4844 /* Build configuration list for PBXNativeTarget "PDShareSDK-PDShareSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0EEAE5873173EB24B2EE65C70C4A8C99 /* Debug */,
-				64C0AE6CD444B8A72F879B4A81F29527 /* Release */,
+				51E094478F9EF0C0887880C60A9794B1 /* Debug */,
+				EBF58B37D285FC2E9BF48054665CE7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

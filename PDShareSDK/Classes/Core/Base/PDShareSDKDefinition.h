@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger, PDShareContentType) {
     PDShareContentTypeUnknow    = 0,  ///< 未知类型
     PDShareContentTypeText      = 1,  ///< 文本类型
     PDShareContentTypeImage     = 2,  ///< 图片类型
-    PDShareContentTypeWebpage   = 3,  ///< 网页类型
+    PDShareContentTypeWebPage   = 3,  ///< 网页类型
     PDShareContentTypeMiniApp   = 4,  ///< 小程序类型
     PDShareContentTypeCustom    = 5,  ///< 自定义类型
 };
