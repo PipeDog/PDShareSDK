@@ -102,7 +102,7 @@ static PDShareManager *__defaultManager;
     PDShareDataModel *shareDataModel = [[PDShareDataModel alloc] initWithChannel:channel];
     !shareData ?: shareData(shareDataModel);
     
-    if (shareDataModel.shareContentType == PDShareContentTypeUnknow) {
+    if (shareDataModel.shareContentType == PDShareContentTypeUnknown) {
         NSError *error = PDShareError(PDShareSDKErrorCodeInvalidData, @"Invalid share data!");
         [self didFinishShare:NO withError:error];
         return;

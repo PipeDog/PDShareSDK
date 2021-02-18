@@ -25,15 +25,16 @@ typedef NS_ENUM(NSInteger, PDShareSDKChannel) {
 /// @enum PDShareMiniAppType
 /// @brief 小程序类型
 typedef NS_ENUM(NSUInteger, PDShareMiniAppType) {
-    PDShareMiniAppTypeRelease = 0,  ///< 正式版
-    PDShareMiniAppTypeTest    = 1,  ///< 测试版
-    PDShareMiniAppTypePreview = 2,  ///< 体验版
+    PDShareMiniAppTypeUnknown = 0,  ///< 未知类型
+    PDShareMiniAppTypeRelease = 1,  ///< 正式版
+    PDShareMiniAppTypeTest    = 2,  ///< 测试版
+    PDShareMiniAppTypePreview = 3,  ///< 体验版
 };
 
 /// @enum PDShareContentType
 /// @brief 分享内容的类型
 typedef NS_ENUM(NSUInteger, PDShareContentType) {
-    PDShareContentTypeUnknow    = 0,  ///< 未知类型
+    PDShareContentTypeUnknown   = 0,  ///< 未知类型
     PDShareContentTypeText      = 1,  ///< 文本类型
     PDShareContentTypeImage     = 2,  ///< 图片类型
     PDShareContentTypeWebPage   = 3,  ///< 网页类型

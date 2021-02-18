@@ -54,7 +54,7 @@
     }
 
     NSAssert(NO, @"Unknown share content Type!");
-    return PDShareContentTypeUnknow;
+    return PDShareContentTypeUnknown;
 }
 
 @end
