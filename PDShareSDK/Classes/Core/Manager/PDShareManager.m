@@ -77,7 +77,7 @@ static PDShareManager *__defaultManager;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _currentChannel = PDShareSDKChannelNone;
+        _currentChannel = PDShareSDKChannelUnknown;
         _events = [NSMutableDictionary dictionary];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActiveNotification:) name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -155,7 +155,7 @@ static PDShareManager *__defaultManager;
     } else {
         !event.onFailure ?: event.onFailure(channel, error);
     }
-    self.currentChannel = PDShareSDKChannelNone;
+    self.currentChannel = PDShareSDKChannelUnknown;
     self.events[PDShareChannelKeyFormat(channel)] = nil;
 }
 

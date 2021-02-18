@@ -8,19 +8,16 @@
 #ifndef PDShareSDKDefinition_h
 #define PDShareSDKDefinition_h
 
-/// @enum PDShareSDKChannel
-/// @brief 分享渠道定义
-typedef NS_ENUM(NSInteger, PDShareSDKChannel) {
-    PDShareSDKChannelNone           = 0, ///< 无效平台类型
-    PDShareSDKChannelCopyLink       = 1, ///< 复制链接
-    PDShareSDKChannelWeChatSession  = 2, ///< 微信好友
-    PDShareSDKChannelWeChatTimeline = 3, ///< 微信朋友圈
-    PDShareSDKChannelEWeChat        = 4, ///< 企业微信
-    PDShareSDKChannelQQ             = 5, ///< QQ
-    PDShareSDKChannelQQZone         = 6, ///< QQ空间
-    PDShareSDKChannelSina           = 7, ///< 新浪微博
-    PDShareSDKChannelSaveToLocal    = 8, ///< 保存到本地
-};
+/// 分享渠道定义
+typedef NSInteger PDShareSDKChannel NS_TYPED_EXTENSIBLE_ENUM;
+static PDShareSDKChannel const PDShareSDKChannelUnknown         = 0; ///< 未知平台类型
+static PDShareSDKChannel const PDShareSDKChannelCopyLink        = 1; ///< 复制链接
+static PDShareSDKChannel const PDShareSDKChannelWeChatSession   = 2; ///< 微信好友
+static PDShareSDKChannel const PDShareSDKChannelWeChatTimeline  = 3; ///< 微信朋友圈
+static PDShareSDKChannel const PDShareSDKChannelEWeChat         = 4; ///< 企业微信
+static PDShareSDKChannel const PDShareSDKChannelQQ              = 5; ///< QQ
+static PDShareSDKChannel const PDShareSDKChannelQQZone          = 6; ///< QQ 空间
+static PDShareSDKChannel const PDShareSDKChannelSina            = 7; ///< 新浪微博
 
 /// @enum PDShareMiniAppType
 /// @brief 小程序类型
