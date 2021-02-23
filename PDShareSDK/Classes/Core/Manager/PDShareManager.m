@@ -141,7 +141,11 @@ static PDShareManager *__defaultManager;
 #pragma mark - Internal Methods
 - (void)applicationDidBecomeActiveNotification:(NSNotification *)notification {
     PDShareModule *shareModule = [[PDShareModuleManager defaultManager] shareModuleForChannel:self.currentChannel];
-    if (![shareModule shouldCallbackWhenApplicationBecomeActive]) { return; }
+    if (![shareModule shouldCallbackWhenApplicationBecomeActive]) {
+        self.events[PDShareChannelKeyFormat(self.currentChannel)] = nil;
+        self.currentChannel = PDShareSDKChannelUnknown;
+        return;
+    }
     
     NSError *error = PDShareError(PDShareSDKErrorCodeUserCancel, @"User cancel share!");
     [self didFinishShare:NO withError:error];
