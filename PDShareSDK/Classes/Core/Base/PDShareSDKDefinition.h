@@ -28,6 +28,13 @@ typedef NS_ENUM(NSUInteger, PDShareMiniAppType) {
     PDShareMiniAppTypePreview = 3,  ///< 体验版
 };
 
+/// @enum PDShareMiniAppActionType
+/// @brief 小程序动作类型
+typedef NS_ENUM(NSUInteger, PDShareMiniAppActionType) {
+    PDShareMiniAppActionTypeShare   = 0,    ///< 分享到微信小程序
+    PDShareMiniAppActionTypeLaunch  = 1     ///< 调起微信小程序
+};
+
 /// @enum PDShareContentType
 /// @brief 分享内容的类型
 typedef NS_ENUM(NSUInteger, PDShareContentType) {

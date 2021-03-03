@@ -50,16 +50,17 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol PDShareMiniAppData <NSObject>
 
 @optional
-@property (nonatomic, strong) NSString *title;                  ///< 消息标题
-@property (nonatomic, strong) NSString *content;                ///< 描述内容
-@property (nonatomic, strong) NSString *miniAppID;              ///< 小程序 appID
-@property (nonatomic, strong) NSString *miniAppPath;            ///< 小程序页面路径
-@property (nonatomic, strong) NSString *webPageURL;             ///< 分享链接 URL
-@property (nonatomic, strong) UIImage *thumbImage;              ///< 缩略图
-@property (nonatomic, strong) NSString *thumbImageURL;          ///< 缩略图URL
-@property (nonatomic, strong) NSString *thumbImageFilePath;     ///< 缩略图本地文件路径
-@property (nonatomic, assign) BOOL withShareTicket;             ///< 是否使用带shareTicket的分享
-@property (nonatomic, assign) PDShareMiniAppType miniAppType;   ///< 小程序类型
+@property (nonatomic, strong) NSString *title;                              ///< 消息标题
+@property (nonatomic, strong) NSString *content;                            ///< 描述内容
+@property (nonatomic, strong) NSString *miniAppID;                          ///< 小程序 appID
+@property (nonatomic, strong) NSString *miniAppPath;                        ///< 小程序页面路径
+@property (nonatomic, strong) NSString *webPageURL;                         ///< 分享链接 URL
+@property (nonatomic, strong) UIImage *thumbImage;                          ///< 缩略图
+@property (nonatomic, strong) NSString *thumbImageURL;                      ///< 缩略图URL
+@property (nonatomic, strong) NSString *thumbImageFilePath;                 ///< 缩略图本地文件路径
+@property (nonatomic, assign) BOOL withShareTicket;                         ///< 是否使用带shareTicket的分享
+@property (nonatomic, assign) PDShareMiniAppType miniAppType;               ///< 小程序类型
+@property (nonatomic, assign) PDShareMiniAppActionType miniAppActionType;   ///< 小程序动作类型
 
 @end
 
